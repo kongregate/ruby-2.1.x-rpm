@@ -1,4 +1,4 @@
-%define rubyver         2.1.2
+%define rubyver         2.2.2
 
 Name:           ruby
 Version:        %{rubyver}
@@ -10,7 +10,7 @@ BuildRequires:  readline readline-devel ncurses ncurses-devel gdbm gdbm-devel gl
 Source0:        ftp://ftp.ruby-lang.org/pub/ruby/ruby-%{rubyver}.tar.gz
 Summary:        An interpreter of object-oriented scripting language
 Group:          Development/Languages
-Provides: ruby(abi) = 2.1
+Provides: ruby(abi) = 2.2
 Provides: ruby-irb
 Provides: ruby-rdoc
 Provides: ruby-libs
@@ -63,6 +63,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}
 
 %changelog
+* Tue July 21 2015 Max Murphy <max@kongregate.com> - 2.2.2
+- Update ruby version to 2.2.2
+
 * Fri May  9 2014 Masahito Yoshida <masahito@axsh.net> - 2.1.2
 - Update ruby version to 2.1.2
 
